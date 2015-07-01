@@ -1,1 +1,1 @@
-import {BusinessList} from './business-list';
+import {BusinessListPage} from './business-list-page';
