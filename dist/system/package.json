@@ -4,7 +4,7 @@
   "description": "Gestion des clients Octopus.",
   "repository": {
     "type": "git",
-    "url": "[REPOURL]"
+    "url": "http://github.com/plamoureux/osm-business"
   },
   "jspm": {
     "main": "index",
