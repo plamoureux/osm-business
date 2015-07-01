@@ -1,6 +1,6 @@
 import {Entity, field} from 'skyy/entity';
 
-@field('building', 'string', {caption: 'Édifice'})
+@field('building', 'string', {caption: 'Édificee'})
 @field('street', 'string', {caption: 'Rue'})
 @field('city', 'string', {caption: 'Ville'})
 @field('postalCode', 'string', {caption: 'Code postal'})
