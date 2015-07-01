@@ -6,10 +6,10 @@ import {Business} from './business';
 //import {MyWidget} from './widgets/my-widget';
 //import {NameColumn} from './business-list/name-column';
 
-@route('businesses', {title: 'Entreprises'})
 @entityType(Business)
 //@toolbar()
 //@button('createBusiness', {widget: MyWidget, label: 'Créer une entreprise'})
 //@column('name', NameColumn)
 @column('address.city', {title: 'Ville', class: 'col-sm-2'})
+@column('address.country', {title: 'Pays', class: 'col-sm-1'})
 export class BusinessList extends EntityList {}
