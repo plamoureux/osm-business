@@ -1,12 +1,16 @@
-import {Entity, config, entity, field} from 'skyy/entity';
+import {Entity, key, plural, string, 
+  radio, lookup, entity} from 'skyy/entity';
 import {Address} from './address';
 
-@config({key: '_id', plural: 'Businesses'})
-@field('_id', 'string', {mandatory: true, unique: true})
-@field('name', 'string', {caption: 'Nom', mandatory: true, unique: true})
-@field('shortName', 'string', {caption: 'Abréviation'})
-@field('language', 'radio',  {caption: 'Langue', items: {fr: 'Français', en: 'Anglais'}})
-@field('phoneNumber', 'string', {caption: 'Téléphone'})
-//@entity('address', Address)
-@field('subscription.pricing', 'lookup', {caption: 'Tarification', items: {'Standard 60$': 'Standard 60$', '58.15$': '58.15$'}})
+@key('_id')
+@plural('Businesses')
+@string('_id', {mandatory: true, unique: true})
+@string('name', {caption: 'Nom', mandatory: true, unique: true})
+@string('shortName', {caption: 'AbrÃ©viation'})
+@radio('language', {caption: 'Langue', 
+  items: {fr: 'FranÃ§ais', en: 'Anglais'}})
+@string('phoneNumber', {caption: 'TÃ©lÃ©phone'})
+@entity('address', Address)
+@lookup('subscription.pricing', {caption: 'Tarification', 
+  items: {'Standard 60$': 'Standard 60$', '58.15$': '58.15$'}})
 export class Business extends Entity {}
