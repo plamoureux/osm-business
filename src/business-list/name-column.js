@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import {customElement, computedFrom} from 'aurelia-framework';
+import {computedFrom} from 'aurelia-framework';
 import {EntityComponent} from 'skyy/web-components';
 import {EditEntity} from 'skyy/web-components/messages';
 
@@ -17,6 +17,7 @@ export class NameColumn extends EntityComponent {
   }
 
 	editEntity() {
-		this.eventAggregator.publish(new EditEntity(this.metadata, this.business));
+		this.publish(new EditEntity(this.business));
+		//////
 	}
 }
