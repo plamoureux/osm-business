@@ -5,5 +5,7 @@ import {bindable} from 'aurelia-framework';
 @bindable('content')
 //@inject(Element)
 export class Editor {
-
+  constructor() {
+    console.log('Salut');  
+  }
 }
