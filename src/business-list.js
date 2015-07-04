@@ -1,11 +1,10 @@
-import {EntityList, column, widget} from 'skyy/web-components/entity-list';
-import {entityType} from 'skyy/web-components';
-import {toolbar, button} from 'skyy/web-components/toolbar';
-
-import {Business} from './business';
-import {NameColumn} from './business-list/name-column';
-import {MyWidget} from './widgets/my-widget';
-
+import {EntityList} from 'skyy/web-components/entity-list/entity-list';
+import {entityType} from 'skyy/web-components/decorators';
+import {Business} from 'osm-business/business';
+import {toolbar, button} from 'skyy/web-components/toolbar/decorators';
+import {MyWidget} from 'osm-business/widgets/my-widget';
+import {column} from 'skyy/web-components/entity-list/decorators';
+import {NameColumn} from 'osm-business/business-list/name-column';
 @entityType(Business)
 @toolbar()
 @button('createBusiness', 
