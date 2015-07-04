@@ -1,7 +1,6 @@
 import {Entity} from 'skyy/entity/entity';
 import {key, plural, string, radio, entity, lookup} from 'skyy/entity/decorators';
 import {Address} from 'osm-business/address';
-
 @key('_id')
 @plural('Businesses')
 @string('_id', {mandatory: true, unique: true})
