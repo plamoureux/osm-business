@@ -1,16 +1,17 @@
-import {EntityForm, header, field} from 'skyy/web-components/entity-form';
-import {entityType, component, panel, sideBySide} from 'skyy/web-components';
+import {EntityForm} from 'skyy/web-components/entity-form/entity-form';
+import {entityType, sideBySide, panel} from 'skyy/web-components/decorators';
+import {Business} from 'osm-business/business';
+import {header, field} from 'skyy/web-components/entity-form/decorators';
 
-import {Business} from './business';
+
 //import {AddressForm} from './address-form';
 //import {ContactList} from './contact-list';
-import {Title as FormTitle} from './business-form/title';
 
 @entityType(Business)
-@header({title: {new: 'Nouvelle entreprise', existing: 'name'}})
-//@header({title: {type: FormTitle}})
+@header({title: {new: 'Nouvelle entreprise', existing: 'name'}})///
+//@header({title: {type: Title}})
 
-//@sideBySide()
+@sideBySide()
 @panel('$info')
 @field('name')
 
