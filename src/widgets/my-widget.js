@@ -1,5 +1,3 @@
-import 'core-js';
-
 export class MyWidget {
 	activate(model) {
 		Object.assign(this, model);
