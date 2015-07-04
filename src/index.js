@@ -1,7 +1,1 @@
-//import {BusinessListPage} from './business-list-page';
-
-class Test {
-  run() {
-    
-  }
-}
+//import {BusinessListPage} from './business-list-page'; //
