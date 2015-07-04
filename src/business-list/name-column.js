@@ -1,8 +1,7 @@
 import _ from 'lodash';
 import {computedFrom} from 'aurelia-framework';
-import {EntityComponent} from 'skyy/web-components';
 import {EditEntity} from 'skyy/web-components/messages';
-
+import {EntityComponent} from 'skyy/web-components/entity-component';
 export class NameColumn extends EntityComponent {
 	// TODO : @computedFrom ne fonctionnait pas; à tester.
 	// un objet contenant une propriété ne semble pas être supporté.
@@ -18,6 +17,5 @@ export class NameColumn extends EntityComponent {
 
 	editEntity() {
 		this.publish(new EditEntity(this.business));
-		//////
 	}
 }
