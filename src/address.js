@@ -1,5 +1,5 @@
-import {Entity, string, lookup} from 'skyy/entity';
-
+import {Entity} from 'skyy/entity/entity';
+import {string, lookup} from 'skyy/entity/decorators';
 @string('building', {caption: 'Édifice'})
 @string('street', {caption: 'Rue'})
 @string('city', {caption: 'Ville'})
