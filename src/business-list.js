@@ -5,14 +5,8 @@ import {toolbar, button} from 'skyy/web-components/toolbar/decorators';
 import {MyWidget} from 'osm-business/widgets/my-widget';
 import {column} from 'skyy/web-components/entity-list/decorators';
 import {NameColumn} from 'osm-business/business-list/name-column';
-
-
-
-
-
-
-@entityType(Business)
-@toolbar() //
+@entityType(Business) //
+@toolbar()
 @button('createBusiness', 
   {widget: MyWidget, label: 'Créer une entreprise'})
 @column('name', NameColumn, {title: 'Nom', class: 'col-sm-6'})
