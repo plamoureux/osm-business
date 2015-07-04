@@ -1,6 +1,6 @@
-import {EntityFormPage, route, form} from 'skyy/web-components/pages';
-
-import {BusinessForm} from './business-form';
+import {EntityFormPage} from 'skyy/web-components/pages/entity-form-page';
+import {route, form} from 'skyy/web-components/pages/decorators';
+import {BusinessForm} from 'osm-business/business-form';
 
 @route('businesses/:id')
 @form(BusinessForm)
