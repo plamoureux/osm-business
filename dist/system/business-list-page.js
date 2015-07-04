@@ -1,4 +1,4 @@
-System.register(['skyy/web-components/pages', './business-list'], function (_export) {
+System.register(['skyy/web-components/pages/entity-list-page', 'skyy/web-components/pages/decorators', 'osm-business/business-list'], function (_export) {
   'use strict';
 
   var EntityListPage, route, list, BusinessList, BusinessListPage;
@@ -10,12 +10,13 @@ System.register(['skyy/web-components/pages', './business-list'], function (_exp
   function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
 
   return {
-    setters: [function (_skyyWebComponentsPages) {
-      EntityListPage = _skyyWebComponentsPages.EntityListPage;
-      route = _skyyWebComponentsPages.route;
-      list = _skyyWebComponentsPages.list;
-    }, function (_businessList) {
-      BusinessList = _businessList.BusinessList;
+    setters: [function (_skyyWebComponentsPagesEntityListPage) {
+      EntityListPage = _skyyWebComponentsPagesEntityListPage.EntityListPage;
+    }, function (_skyyWebComponentsPagesDecorators) {
+      route = _skyyWebComponentsPagesDecorators.route;
+      list = _skyyWebComponentsPagesDecorators.list;
+    }, function (_osmBusinessBusinessList) {
+      BusinessList = _osmBusinessBusinessList.BusinessList;
     }],
     execute: function () {
       BusinessListPage = (function (_EntityListPage) {
@@ -37,4 +38,4 @@ System.register(['skyy/web-components/pages', './business-list'], function (_exp
     }
   };
 });
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInVua25vd24iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O2lEQU1hLGdCQUFnQjs7Ozs7Ozs7OzsrQ0FOckIsY0FBYztzQ0FBRSxLQUFLO3FDQUFFLElBQUk7O21DQUUzQixZQUFZOzs7QUFJUCxzQkFBZ0I7aUJBQWhCLGdCQUFnQjs7Ozs7O2tCQUFoQixnQkFBZ0I7O2dDQUFoQixnQkFBZ0I7QUFBaEIsd0JBQWdCLEdBRDVCLElBQUksQ0FBQyxZQUFZLENBQUMsQ0FDTixnQkFBZ0IsS0FBaEIsZ0JBQWdCO0FBQWhCLHdCQUFnQixHQUY1QixLQUFLLENBQUMsWUFBWSxFQUFFLEVBQUMsS0FBSyxFQUFFLGFBQWEsRUFBQyxDQUFDLENBRS9CLGdCQUFnQixLQUFoQixnQkFBZ0I7ZUFBaEIsZ0JBQWdCO1NBQVMsY0FBYzs7a0NBQXZDLGdCQUFnQiIsImZpbGUiOiJ1bmtub3duIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHtFbnRpdHlMaXN0UGFnZSwgcm91dGUsIGxpc3R9IGZyb20gJ3NreXkvd2ViLWNvbXBvbmVudHMvcGFnZXMnO1xyXG5cclxuaW1wb3J0IHtCdXNpbmVzc0xpc3R9IGZyb20gJy4vYnVzaW5lc3MtbGlzdCc7XHJcblxyXG5Acm91dGUoJ2J1c2luZXNzZXMnLCB7dGl0bGU6ICdFbnRyZXByaXNlcyd9KVxyXG5AbGlzdChCdXNpbmVzc0xpc3QpXHJcbmV4cG9ydCBjbGFzcyBCdXNpbmVzc0xpc3RQYWdlIGV4dGVuZHMgRW50aXR5TGlzdFBhZ2Uge30iXX0=
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInVua25vd24iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O2lEQUthLGdCQUFnQjs7Ozs7Ozs7Ozs2REFMckIsY0FBYzs7Z0RBQ2QsS0FBSzsrQ0FBRSxJQUFJOzs4Q0FDWCxZQUFZOzs7QUFHUCxzQkFBZ0I7aUJBQWhCLGdCQUFnQjs7Ozs7O2tCQUFoQixnQkFBZ0I7O2dDQUFoQixnQkFBZ0I7QUFBaEIsd0JBQWdCLEdBRDVCLElBQUksQ0FBQyxZQUFZLENBQUMsQ0FDTixnQkFBZ0IsS0FBaEIsZ0JBQWdCO0FBQWhCLHdCQUFnQixHQUY1QixLQUFLLENBQUMsWUFBWSxFQUFFLEVBQUMsS0FBSyxFQUFFLGFBQWEsRUFBQyxDQUFDLENBRS9CLGdCQUFnQixLQUFoQixnQkFBZ0I7ZUFBaEIsZ0JBQWdCO1NBQVMsY0FBYzs7a0NBQXZDLGdCQUFnQiIsImZpbGUiOiJ1bmtub3duIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHtFbnRpdHlMaXN0UGFnZX0gZnJvbSAnc2t5eS93ZWItY29tcG9uZW50cy9wYWdlcy9lbnRpdHktbGlzdC1wYWdlJztcbmltcG9ydCB7cm91dGUsIGxpc3R9IGZyb20gJ3NreXkvd2ViLWNvbXBvbmVudHMvcGFnZXMvZGVjb3JhdG9ycyc7XG5pbXBvcnQge0J1c2luZXNzTGlzdH0gZnJvbSAnb3NtLWJ1c2luZXNzL2J1c2luZXNzLWxpc3QnO1xuQHJvdXRlKCdidXNpbmVzc2VzJywge3RpdGxlOiAnRW50cmVwcmlzZXMnfSlcbkBsaXN0KEJ1c2luZXNzTGlzdClcbmV4cG9ydCBjbGFzcyBCdXNpbmVzc0xpc3RQYWdlIGV4dGVuZHMgRW50aXR5TGlzdFBhZ2Uge30iXX0=
