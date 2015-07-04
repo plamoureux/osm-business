@@ -1,6 +1,6 @@
-import {Entity, key, plural, string, 
-  radio, lookup, entity} from 'skyy/entity';
-import {Address} from './address';
+import {Entity} from 'skyy/entity/entity';
+import {key, plural, string, radio, entity, lookup} from 'skyy/entity/decorators';
+import {Address} from 'osm-business/address';
 
 @key('_id')
 @plural('Businesses')
